@@ -9,7 +9,9 @@ while menu != 1 and menu != 2 and menu != 3:
 # If they select 1, ask the user to enter a school subject and save it to a new file called “Subject.txt”. 
 #  It should overwrite any existing file with a new file.
 if menu == 1:
+    user = input("Please enter a new subject: ")
     file = open("Subject.txt", "w")
+    file.write(user + "\n")
     file.close()
 
 #If they select 2, display the contents of the “Subject.txt” file.
